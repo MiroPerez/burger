@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <image id="twitter" class="cls-1" width="20" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAABTElEQVQ4jaWUyUpDQRBFT8UYHHBcGBzAheJKBEUEt/67CxeC4iIgiIKIRpxwikbxypVOjDHxxaSgaehXdV7Vra4OAEmFiKiSYZKKwBIwBnwAl0AJeAamgGpIygFbwG5E3LZDSpoDVlt8ekt7Bdg2bAgYBDYlzbaB2W+5zb/60zJ4wY7v6UMfsCZpQ9JIU9B4CvrLHoDDfES8SHKpE8nZOhUl3QDnwB0wkKVvRBx4z7shwBGwAhQafCbT6sRqOpJPa91SdRjcyiq1s1xEuOUuOXoAXteBad8DXnsAXvwARsRjgt53AXN3r5oztA0Do10ASxHfajUCj4GTf8JOI6LcePCrEZI8p4vATAbMZe5EhGe6br4yNZDhhs0D0xmwM2C/GfaVoSQHOyNrmDVevm/WzMCWVnu+DHKJfoI8t54Y6+sMntL4+WqUI6L9AACfru1k/XIJHDAAAAAASUVORK5CYII="/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <image id="inst" class="cls-1" width="20" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABUUlEQVQ4ja2Vz0sCURDHP6NWYBAFGkEd+vkPdAk89n936GgHb10qiYIES4gCxSz7xtgsrLqatH7h7Xs7u/Nh5s28XZO0CZwC6+RTF2g48HwJsETdUg7YO9CJ9Q5QdlYpRzT3ZvboC0k+HfqlkAOoLGOeCPckrcS6sijwG/C02hHRNrAfmVXSoEWADqubWSdle5HUAmqztisx9oGLGL2wPUzARjKzV6AZtx8pv680UGbWixfKYWvPif455jVgGL4iR5UzKzwFNLNhpO+qzgEmzz6BwUxg6CnmA0lbU6FJG8BR3LbMbCzarCrfeY/F/tQkNVN7Vo0TUYrIbiadp4BmNpBUB84CehIjLYddmVn/T2BA3yRdAsfAboAJkPfhbRZsJjCg3kLXPiSt/ppGtrlKgEVJBTPz05EFH6vkpNw3KXD6A+tO3jb/URHwLLrL/QVA4wdCI3POvNd1KgAAAABJRU5ErkJggg=="/>
+</svg>
