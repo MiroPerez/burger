@@ -132,7 +132,14 @@ header {
     text-transform: uppercase;
 }
 
-
+.menu-item:nth-last-of-type(n + 2):after {
+    border:solid 2px #fff;
+    border-radius: 50%;
+    content: "";
+    margin-left: 16px;
+    height: 1px;
+    width: 1px;
+}
 
 .button-order {
     padding: 13px 16px; 
