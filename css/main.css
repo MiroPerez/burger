@@ -480,12 +480,13 @@ header {
     transform: rotate(-90deg);
     text-align: center;
     white-space: nowrap;
+    user-select: none;
 }
 
 .menu__trigger {
     width: 80px;
     height: 100%;  
-    transition: all 0.7s;
+    
     opacity: 1; 
     position: relative;   
     background: no-repeat center center /cover;
@@ -522,6 +523,7 @@ header {
     padding-top: 118px;
     padding-right: 170px;
     will-change: width;
+    user-select: none;
 }
 
 
