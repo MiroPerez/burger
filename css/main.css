@@ -128,6 +128,7 @@ header {
     color:#fff;
     font-family: "Ubuntu";
     font-weight: 500;
+    font-size: 14px;
     text-transform: uppercase;
 }
 
@@ -142,7 +143,9 @@ header {
     color:#fff;
     font-family: "Ubuntu";
     font-weight: 500;
+    font-size: 14px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .button-order:hover {
