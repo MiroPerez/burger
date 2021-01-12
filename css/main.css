@@ -132,6 +132,11 @@ header {
     text-transform: uppercase;
 }
 
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+
 .menu-item:nth-last-of-type(n + 2):after {
     border:solid 2px #fff;
     border-radius: 50%;
@@ -139,6 +144,8 @@ header {
     margin-left: 16px;
     height: 1px;
     width: 1px;
+    display: inline-block;
+    background-color: #fff;
 }
 
 .button-order {
