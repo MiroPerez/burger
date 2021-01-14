@@ -39,7 +39,6 @@ main {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
@@ -262,9 +261,6 @@ header {
     
 }
 
-.arrow:hover {
-    
-}
 
 .burgers__slider {
     display: flex;
@@ -439,6 +435,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;    
     overflow: hidden;
+    user-select: none;
 }
 
 .menu__item__list {
@@ -470,6 +467,7 @@ header {
   
 .item--active {
     width: 65%;  
+    color: #f9b43b;
 }
 
 .trigger__content {
@@ -477,6 +475,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 } 
 
 .trigger__name {
@@ -493,7 +492,6 @@ header {
 .menu__trigger {
     width: 80px;
     height: 100%;  
-    
     opacity: 1; 
     position: relative;   
     background: no-repeat center center /cover;

@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
  
     let list = document.querySelector('.menu__item__list')
     let items = list.querySelectorAll(".menu__item");
+    let names = list.querySelectorAll(".trigger__name")
 
     list.addEventListener('click', (event) => {
         for (let item of items) {
@@ -77,6 +78,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let item = event.target.closest('.menu__item')
         item.classList.add('item--active')
+
+        if(item.classList.contains("item--active")) {
+            
+        }
 
     });     
     
