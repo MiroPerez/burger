@@ -98,23 +98,25 @@ main {
 section {
     height: 100vh;
     scroll-snap-align: start;
+    
 }
 
 .container {
-    max-width: 992px;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .first-screen {
     background: no-repeat center/100% url(../img/texture.png);
+
     min-height: 100vh;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 13px;
     position: relative;
 }
@@ -134,6 +136,7 @@ header {
 .menu-item {
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 .menu-item:nth-last-of-type(n + 2):after {
@@ -163,6 +166,22 @@ header {
 
 .button-order:hover {
     background-color: #c1401e;
+}
+
+.header__burger {
+    position: absolute;
+    right: -35px;
+    display: grid;
+    grid-gap: 5px;
+    display: none;
+    cursor: pointer;
+}
+
+.burger__stick {
+    height: 3px;
+    width: 24px;
+    border-radius: 3px;
+    background-color: #fff;
 }
 
 .first-content {
@@ -301,7 +320,7 @@ header {
 
 .btn-burger:hover ~ .burger__compose {
     opacity: 1;
-    transition: all .5s;
+    transition: all .5sg;
 }
 
 .btn-burger__text {
@@ -390,7 +409,7 @@ header {
 }
 
 .team__member {
-    margin-top: 40px;
+    margin-top: 15%;
 }
 
 .member--active .member__container {
@@ -592,12 +611,14 @@ header {
     color: #fff;
 }
 
-.clients__container {
-    padding: 50px 22px;
+.clients__container {  
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     height: 100%;
-    transition: opacity 270ms;
+    transition: opacity .3s;
 }
 
 .clients__container:hover {
@@ -605,6 +626,7 @@ header {
 }
 
 .clients__name {
+    
     font-family: "Gagalin";
     text-transform: uppercase;
     font-size: 14px;
@@ -614,7 +636,7 @@ header {
     font-family: "Ubuntu";
     font-weight: 300;
     font-size: 14px;
-    margin-top: 30px;
+    margin-top: 5%;
     line-height: 24px;
 }
 
@@ -634,42 +656,52 @@ header {
 
 .block-1 {
     background: no-repeat center/100% url(../img/photo-1458696765561-12142eaead13.jpg);
+    background-size: cover;
 }
 
 .block-2 {
     background: no-repeat center/100% url(../img/photo-1440606797942-6cc04c045447.jpg);
+    background-size: cover;
 }
 
 .block-3 {
     background: no-repeat center/100% url(../img/photo-1445404590072-16ef9c18bd83.jpg);
+    background-size: cover;
 }
 
 .block-4 {
     background: no-repeat center/100% url(../img/photo-1468546818829-25bb337b6646.jpg);
+    background-size: cover;
 }
 
 .block-5 {
     background: no-repeat center/100% url(../img/photo-1438763298591-75a0d42b7265.jpg);
+    background-size: cover;
 }
 
 .block-6 {
     background: no-repeat center/100% url(../img/photo-1461332682233-b818af4c3a6e.jpg);
+    background-size: cover;
 }
 
 .block-7 {
     background: no-repeat center/100% url(../img/photo-1457706924510-773f3c796de3.jpg);
+    background-size: cover;
 }
 
 .block-8 {
     background: no-repeat center/100% url(../img/photo-1458890715264-db84f7c6ef13.jpg);
+    background-size: cover;
 }
 
 .work {
     height: 100vh;
     background: no-repeat center/100% url(../img/BG_.jpg);
+    background-size: cover; 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .our-work__title {
@@ -689,7 +721,8 @@ header {
 .form {
     height: 100vh;
     background: no-repeat center/100% url(../img/bg-texture.jpg);
-    padding-top: 139px;
+    background-size: cover;
+    padding-top: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -702,7 +735,7 @@ header {
 }
 
 .form__contacts {
-    width: 460px;
+    width: 50%;
 }
 
 .form__main {
@@ -762,7 +795,6 @@ header {
     font-family: "Gagalin";
     font-size: 72px;
     color: #f9b43b;
-
 }
 
 .form__address {
@@ -1078,4 +1110,86 @@ header {
     font-family: "Ubuntu";
     font-weight: 300;
     line-height: 24px;
+}
+
+@media (max-width: 1000px) {
+    .menu {display: none;}
+    .header__burger {display: grid;}
+    .first-screen {
+        background: no-repeat center/100% url(../img/texture.png);
+        background-size: cover;
+        min-height: 100vh;}
+    .first-content__img {margin-top: 10%;}
+    .first-content__text {margin: 0;
+    text-align: center;}
+    .we {
+        background: no-repeat center/100% url(../img/bg.png);
+        background-size: cover;
+        min-height: 100vh;        
+    }
+
+    .burgers__slide {
+        flex-wrap: wrap;
+    }
+
+    .kkal-image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .team {
+        background: no-repeat center/100% url(../img/team.png);
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    .team__container {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team__members {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .reviews {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        color: #fff;
+    }
+
+    .clients__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clients__name {
+        text-align: center;
+    }
+
+    .clients__text {
+        text-align: center;
+    }
+
+    .form__container {
+        margin-top: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .first-content {flex-direction: column;}
+
+   
+    
 }
