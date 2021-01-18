@@ -969,6 +969,7 @@ header {
 
 .footer {
     background: no-repeat center/100% url(../img/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg);
+    background-size: cover;
     padding: 11px 80px 15px;
     font-family: "Ubuntu";
     font-size: 14px;
