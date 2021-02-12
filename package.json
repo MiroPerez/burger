@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "swiper": "^6.4.6"
+  },
+  "scripts": {
+    "dev": "parcel index.html"
+  }
+}

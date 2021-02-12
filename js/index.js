@@ -1,4 +1,32 @@
+
+// import Swiper from 'swiper';
+// import 'swiper/swiper-bundle.css';
+
+
 document.addEventListener("DOMContentLoaded", function() {
+
+    // const swiper = new Swiper('.swiper-container', {
+    //     // Optional parameters
+    //     direction: 'vertical',
+    //     loop: true,
+      
+    //     // If we need pagination
+    //     pagination: {
+    //       el: '.swiper-pagination',
+    //     },
+      
+    //     // Navigation arrows
+    //     navigation: {
+    //       nextEl: '.swiper-button-next',
+    //       prevEl: '.swiper-button-prev',
+    //     },
+      
+    //     // And if we need scrollbar
+    //     scrollbar: {
+    //       el: '.swiper-scrollbar',
+    //     },
+    //   })
+
 
     +function Accordion() {
         let active = "member--active";
@@ -86,12 +114,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });     
     
     let slides = document.querySelector(".burgers__slides")
+    let slide = document.querySelectorAll(".burgers__slide")
     let right = document.querySelector(".right")
     let left = document.querySelector(".left")
 
     let minRight = 0;
     let maxRight = 1720;
-    let step = 860;
+    // let step = slide.getBoundingClientRect().width;
     let currentRight = 0;
     
     slides.style.right = currentRight;
