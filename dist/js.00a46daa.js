@@ -228,43 +228,59 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (item.classList.contains("item--active")) {}
   });
-  var slides = document.querySelector(".burgers__slides");
-  var slide = document.querySelectorAll(".burgers__slide");
+  var line = document.querySelector(".burgers__slides");
+  var slider = document.querySelector(".burgers__slider");
+  var slides = document.querySelectorAll(".burgers__slide");
   var right = document.querySelector(".right");
   var left = document.querySelector(".left");
   var minRight = 0;
-  var maxRight = 1720; // let step = slide.getBoundingClientRect().width;
-
+  var step = slider.getBoundingClientRect().width;
   var currentRight = 0;
-  slides.style.right = currentRight;
+  line.style.right = currentRight;
+  var maxRight = step * 2;
+
+  var _iterator2 = _createForOfIteratorHelper(slides),
+      _step2;
+
+  try {
+    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+      var slide = _step2.value;
+      slide.style.width = slider.getBoundingClientRect().width + "px";
+    }
+  } catch (err) {
+    _iterator2.e(err);
+  } finally {
+    _iterator2.f();
+  }
+
   right.addEventListener("click", function () {
     if (currentRight < maxRight) {
       currentRight += step;
-      slides.style.right = currentRight + "px";
+      line.style.right = currentRight + "px";
     }
   });
   left.addEventListener("click", function () {
     if (currentRight > minRight) {
       currentRight -= step;
-      slides.style.right = currentRight + "px";
+      line.style.right = currentRight + "px";
     }
   });
   var nav = document.querySelector('.nav');
   var navItems = nav.querySelectorAll(".nav__item");
   nav.addEventListener('click', function (event) {
-    var _iterator2 = _createForOfIteratorHelper(navItems),
-        _step2;
+    var _iterator3 = _createForOfIteratorHelper(navItems),
+        _step3;
 
     try {
-      for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-        var _navItem = _step2.value;
+      for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+        var _navItem = _step3.value;
 
         _navItem.classList.remove('nav__item--active');
       }
     } catch (err) {
-      _iterator2.e(err);
+      _iterator3.e(err);
     } finally {
-      _iterator2.f();
+      _iterator3.f();
     }
 
     var navItem = event.target.closest('.nav__item');
@@ -357,7 +373,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60326" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65360" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

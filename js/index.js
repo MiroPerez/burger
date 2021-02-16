@@ -113,22 +113,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });     
     
-    let slides = document.querySelector(".burgers__slides")
-    let slide = document.querySelectorAll(".burgers__slide")
+    let line = document.querySelector(".burgers__slides")
+    let slider = document.querySelector(".burgers__slider")
+    let slides = document.querySelectorAll(".burgers__slide")
     let right = document.querySelector(".right")
     let left = document.querySelector(".left")
 
+
     let minRight = 0;
-    let maxRight = 1720;
-    // let step = slide.getBoundingClientRect().width;
+    let step = slider.getBoundingClientRect().width;
+    
     let currentRight = 0;
     
-    slides.style.right = currentRight;
     
+    line.style.right = currentRight;
+    
+    let maxRight = step * 2;
+
+    for (let slide of slides) {
+        slide.style.width = slider.getBoundingClientRect().width + "px";
+    }
+
     right.addEventListener("click", function() {
       if (currentRight < maxRight) {
       currentRight += step;
-      slides.style.right = currentRight + "px";
+      line.style.right = currentRight + "px";
       }
     
     });
@@ -136,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
     left.addEventListener("click", function() {
       if (currentRight > minRight) {
         currentRight -= step;
-        slides.style.right = currentRight + "px";
+        line.style.right = currentRight + "px";
       }
     });
 
