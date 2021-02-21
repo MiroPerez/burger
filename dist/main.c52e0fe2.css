@@ -196,9 +196,14 @@ header {
 
 .first-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+}
+
+.first-content__block {
+    display: flex;
+    align-items: center;
 }
 
 .first-content__img {
@@ -242,6 +247,10 @@ header {
     font-weight: 400;
     font-size: 70px;
     margin-bottom: 50px;
+}
+
+.scroll__down-block {
+    margin-top: 90px;
 }
 
 .benefits {
@@ -306,7 +315,7 @@ header {
     display: flex;
     position: relative;
     transform: translateX(0%);
-    transition: right 0.6s;
+    transition: right 0.6s;    
 }
 
 .burgers__slide {
@@ -509,7 +518,7 @@ header {
     font-weight: 300;
     color:#fff;
     font-size: 13px;
-    margin-top: 22px;
+    margin-top: 10px;
 }
 
 .menu__section {
@@ -883,6 +892,7 @@ header {
 }
 
 .form__pay-radio {
+    display: flex;
     margin-right: 10px;
 }
 
@@ -899,6 +909,10 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.round {
+    margin-right: 10px;
 }
 
 .round__inner {
@@ -1150,7 +1164,20 @@ header {
         font-size: 12px;
     }
     
-  
+    .mob__modal {
+    background-color: rgba(47, 50, 52, 0.92);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    }
+
     /* .first-screen {
         background: no-repeat center/100% url(../img/texture.png);
         background-size: cover;
@@ -1159,6 +1186,13 @@ header {
 
     .first-content__img {
         margin-top: 10%;
+    }
+
+    .first-content__block {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
     }
 
     .first-content__text {
@@ -1214,6 +1248,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0px;
     }
 
     .team__members {
@@ -1259,13 +1294,13 @@ header {
     }
     
 
-    main {
+    /* main {
         height: auto;
         overflow-y: auto;
         scroll-snap-type: none;
         scroll-behavior: none;
         overflow: hidden;
-    }
+    } */
 
     .nav {
         display: none;
@@ -1407,6 +1442,7 @@ header {
 
     .team__title {
         margin-top: 40%;
+        font-size: 50px;
     }
 
     .team__members {
@@ -1445,7 +1481,7 @@ header {
     }
 
     #form {
-        padding: 0;
+        padding: 0px 4px;
     }
 
     .form__container {
@@ -1506,6 +1542,7 @@ header {
     .contact {
         font-size: 12px;
         text-align: center;
+        white-space: nowrap;
     }
 }
 

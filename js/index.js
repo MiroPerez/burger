@@ -122,9 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let minRight = 0;
     let step = slider.getBoundingClientRect().width;
-    
     let currentRight = 0;
-    
     
     line.style.right = currentRight;
     
@@ -148,6 +146,35 @@ document.addEventListener("DOMContentLoaded", function() {
         line.style.right = currentRight + "px";
       }
     });
+
+
+
+        // let open = 'mob__modal--open';
+        // let link = document.querySelector('.header__burger');
+        // let modal = document.querySelector('.mob__modal');
+            
+        // link.addEventListener("click", function(event) {
+        // let target = link.getAttribute("href")
+        // let modal = document.querySelector(target);
+        // Open(modal);
+        //     });
+       
+        // let close = modal.querySelector(".modal__close");
+        // close.addEventListener("click", function(event) {
+        // event.preventDefault();
+        // Close(modal);
+        //     });
+        // });
+
+        // function Open(el) {
+        //     el.classList.add(open);
+        // }
+
+        // function Close(el) {
+        //     el.classList.remove(open);
+        // }
+
+
 
     
     let nav = document.querySelector('.nav')
