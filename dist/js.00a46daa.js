@@ -264,43 +264,66 @@ document.addEventListener("DOMContentLoaded", function () {
       currentRight -= step;
       line.style.right = currentRight + "px";
     }
-  }); // let open = 'mob__modal--open';
-  // let link = document.querySelector('.header__burger');
-  // let modal = document.querySelector('.mob__modal');
-  // link.addEventListener("click", function(event) {
-  // let target = link.getAttribute("href")
-  // let modal = document.querySelector(target);
-  // Open(modal);
-  //     });
-  // let close = modal.querySelector(".modal__close");
-  // close.addEventListener("click", function(event) {
-  // event.preventDefault();
-  // Close(modal);
-  //     });
-  // });
-  // function Open(el) {
-  //     el.classList.add(open);
-  // }
-  // function Close(el) {
-  //     el.classList.remove(open);
-  // }
+  });
+  var burger = document.querySelector('.header__burger');
+  var menu = document.querySelector('.menu');
+  var firstContent = document.querySelector('.first-content');
+  var container = document.querySelector('.container');
+  var headButton = document.querySelector('.head-button');
+  var noScroll = document.querySelector('.main');
+  var logo = document.querySelector(".logo");
+  var menuItems = document.querySelectorAll(".menu-item");
+  burger.addEventListener("click", function () {
+    menu.classList.add('menu__active');
+    firstContent.classList.add('first-content__close');
+    container.classList.add('container__size');
+    headButton.classList.add('button__close');
+    noScroll.classList.add('main__no-scroll');
+  });
+  logo.addEventListener("click", function () {
+    menu.classList.remove('menu__active');
+    firstContent.classList.remove('first-content__close');
+    container.classList.remove('container__size');
+    headButton.classList.remove('button__close');
+    noScroll.classList.remove('main__no-scroll');
+  });
+
+  var _iterator3 = _createForOfIteratorHelper(menuItems),
+      _step3;
+
+  try {
+    for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+      var menuItem = _step3.value;
+      menuItem.addEventListener("click", function () {
+        menu.classList.remove('menu__active');
+        firstContent.classList.remove('first-content__close');
+        container.classList.remove('container__size');
+        headButton.classList.remove('button__close');
+        noScroll.classList.remove('main__no-scroll');
+      });
+    }
+  } catch (err) {
+    _iterator3.e(err);
+  } finally {
+    _iterator3.f();
+  }
 
   var nav = document.querySelector('.nav');
   var navItems = nav.querySelectorAll(".nav__item");
   nav.addEventListener('click', function (event) {
-    var _iterator3 = _createForOfIteratorHelper(navItems),
-        _step3;
+    var _iterator4 = _createForOfIteratorHelper(navItems),
+        _step4;
 
     try {
-      for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-        var _navItem = _step3.value;
+      for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+        var _navItem = _step4.value;
 
         _navItem.classList.remove('nav__item--active');
       }
     } catch (err) {
-      _iterator3.e(err);
+      _iterator4.e(err);
     } finally {
-      _iterator3.f();
+      _iterator4.f();
     }
 
     var navItem = event.target.closest('.nav__item');
@@ -393,7 +416,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63413" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62092" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

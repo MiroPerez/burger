@@ -42,6 +42,7 @@ li {
 main {
     height: 100vh;
     overflow-y: scroll;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
@@ -1152,9 +1153,9 @@ header {
 }
 
 @media (max-width: 1000px) {
-    .menu {
+    /* .menu {
         display: none;
-    }
+    } */
 
     .header__burger {
         display: grid;
@@ -1164,18 +1165,64 @@ header {
         font-size: 12px;
     }
     
-    .mob__modal {
-    background-color: rgba(47, 50, 52, 0.92);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
+    .menu {
+        position: fixed;
+        height: 40%;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        margin-left: 0;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .menu__active {
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .first-content__close {
+        display: none;
+    }
+
+    .container__size {
+        height: 100%;
+        max-width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-item:nth-last-of-type(n + 2):after {
+        position: unset;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        /* margin-top: 5%;
+        margin-bottom: 5%; */
+        right: 0;
+        transform: translateX(50%);
+        border: solid 2px #fff;
+        border-radius: 50%;
+        content: "";
+        height: 1px;
+        width: 1px;
+        display: inline-block;
+        background-color: #fff;
+
+    }
+
+    .button__close {
+        display: none;
+    }
+
+    .main__no-scroll {
+        overflow: hidden;
+        /* position: fixed; */
     }
 
     /* .first-screen {
@@ -1349,6 +1396,8 @@ header {
     head {
         margin-left: 75px;
     }
+
+   
 
     .header__burger {
         position: unset;
@@ -1543,5 +1592,12 @@ header {
         font-size: 12px;
         text-align: center;
         white-space: nowrap;
+    }
+
+    .container__size {
+        height: 100%;
+        max-width: 100%;
+        
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }

@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
         item.classList.add('item--active')
 
         if(item.classList.contains("item--active")) {
-            
+           
         }
 
     });     
@@ -118,7 +118,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let slides = document.querySelectorAll(".burgers__slide")
     let right = document.querySelector(".right")
     let left = document.querySelector(".left")
-
 
     let minRight = 0;
     let step = slider.getBoundingClientRect().width;
@@ -149,30 +148,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-        // let open = 'mob__modal--open';
-        // let link = document.querySelector('.header__burger');
-        // let modal = document.querySelector('.mob__modal');
+    let burger = document.querySelector('.header__burger')
+    let menu = document.querySelector('.menu')
+    let firstContent = document.querySelector('.first-content')
+    let container = document.querySelector('.container')
+    let headButton = document.querySelector('.head-button')
+    let noScroll = document.querySelector('.main')
+    let logo = document.querySelector(".logo")
+    let menuItems = document.querySelectorAll(".menu-item")
+
+    burger.addEventListener("click", () => {
+        menu.classList.add('menu__active')
+        firstContent.classList.add('first-content__close')
+        container.classList.add('container__size')
+        headButton.classList.add('button__close')
+        noScroll.classList.add('main__no-scroll')
+    });
+
+    logo.addEventListener("click", () => {
+        menu.classList.remove('menu__active')
+        firstContent.classList.remove('first-content__close')
+        container.classList.remove('container__size')
+        headButton.classList.remove('button__close')
+        noScroll.classList.remove('main__no-scroll')
+    });
+
+    
+        for (let menuItem of menuItems) {
+            menuItem.addEventListener("click", () => {
+            menu.classList.remove('menu__active')
+            firstContent.classList.remove('first-content__close')
+            container.classList.remove('container__size')
+            headButton.classList.remove('button__close')
+            noScroll.classList.remove('main__no-scroll')
+        });
+    }   
             
-        // link.addEventListener("click", function(event) {
-        // let target = link.getAttribute("href")
-        // let modal = document.querySelector(target);
-        // Open(modal);
-        //     });
-       
-        // let close = modal.querySelector(".modal__close");
-        // close.addEventListener("click", function(event) {
-        // event.preventDefault();
-        // Close(modal);
-        //     });
-        // });
-
-        // function Open(el) {
-        //     el.classList.add(open);
-        // }
-
-        // function Close(el) {
-        //     el.classList.remove(open);
-        // }
+    
 
 
 
