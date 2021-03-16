@@ -3,6 +3,7 @@
     "swiper": "^6.4.6"
   },
   "scripts": {
+    "build": "webpack",
     "dev": "parcel index.html"
   },
   "devDependencies": {
