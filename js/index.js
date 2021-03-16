@@ -208,7 +208,9 @@ document.addEventListener("DOMContentLoaded", function() {
         sections.forEach(section => {
             let top = section.getBoundingClientRect().top
             positions.push(top)
+            
         })
+        
         
     }
     
@@ -227,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 stop = true
             }
         })
+        
         setNav(navItems, current)
     })
 

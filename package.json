@@ -4,5 +4,9 @@
   },
   "scripts": {
     "dev": "parcel index.html"
+  },
+  "devDependencies": {
+    "webpack": "^5.26.0",
+    "webpack-cli": "^4.5.0"
   }
 }
