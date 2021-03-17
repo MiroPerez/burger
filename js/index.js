@@ -163,6 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
         container.classList.add('container__size')
         headButton.classList.add('button__close')
         noScroll.classList.add('main__no-scroll')
+        burger.classList.add("display__none")
     });
 
     logo.addEventListener("click", () => {
@@ -171,6 +172,7 @@ document.addEventListener("DOMContentLoaded", function() {
         container.classList.remove('container__size')
         headButton.classList.remove('button__close')
         noScroll.classList.remove('main__no-scroll')
+        burger.classList.remove("display__none")
     });
 
     
@@ -181,6 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
             container.classList.remove('container__size')
             headButton.classList.remove('button__close')
             noScroll.classList.remove('main__no-scroll')
+            burger.classList.remove("display__none")
         });
     }   
             

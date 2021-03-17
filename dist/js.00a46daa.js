@@ -279,6 +279,7 @@ document.addEventListener("DOMContentLoaded", function () {
     container.classList.add('container__size');
     headButton.classList.add('button__close');
     noScroll.classList.add('main__no-scroll');
+    burger.classList.add("display__none");
   });
   logo.addEventListener("click", function () {
     menu.classList.remove('menu__active');
@@ -286,6 +287,7 @@ document.addEventListener("DOMContentLoaded", function () {
     container.classList.remove('container__size');
     headButton.classList.remove('button__close');
     noScroll.classList.remove('main__no-scroll');
+    burger.classList.remove("display__none");
   });
 
   var _iterator3 = _createForOfIteratorHelper(menuItems),
@@ -300,6 +302,7 @@ document.addEventListener("DOMContentLoaded", function () {
         container.classList.remove('container__size');
         headButton.classList.remove('button__close');
         noScroll.classList.remove('main__no-scroll');
+        burger.classList.remove("display__none");
       });
     }
   } catch (err) {
@@ -416,7 +419,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60223" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62665" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

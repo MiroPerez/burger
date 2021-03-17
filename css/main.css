@@ -1373,6 +1373,10 @@ header {
         margin-left: 0;
         text-align: center;
     }
+
+    .display__none {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
